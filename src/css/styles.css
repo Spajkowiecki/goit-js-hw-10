@@ -13,7 +13,6 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
-  padding: 10px;
 }
 
 #search-box {
@@ -23,19 +22,63 @@ body {
   margin-bottom: 16px;
 }
 
-li {
+li button {
+  width: 100%;
   display: flex;
-  border: 1px solid gray;
+  gap: 10px;
+  font-weight: 700;
+  align-items: center;
+  padding: 10px;
+  height: 40px;
+  background: none;
+  border: 1px solid #212121;
+  cursor: pointer;
+}
+button:hover {
+  background: #21212110;
+}
+
+li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+li button img {
+  width: 30px;
+}
+
+aside {
+  border-right: 1px solid black;
   padding: 10px;
 }
 
-li img {
-  width: 50px;
-  height: 50px;
+.wrapper {
+  display: flex;
+  height: 92.7vh;
 }
 
-.big-info-header {
+header {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.country-info img {
+  width: 200px;
+}
+
+.detailBox .box-main p:first-child {
+  font-size: 52px;
+}
+
+.detailBox .box-main p:last-child {
+  margin-top: -20px;
+  font-size: 32px;
+}
+
+.detailBox .box-info p {
+  font-size: 24px;
+}
+
+.detailBox-header {
   display: flex;
   gap: 10px;
-  align-items: center;
 }
